@@ -23,8 +23,9 @@ public class UserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username=req.getParameter("username");
         String password=req.getParameter("password");
+        String name=req.getParameter("name");
 
-        User user= new User(null,username,null,password,null);
+        User user= new User(null,username,name,password,null);
         UserDao dao=new UserDao();
         dao.insert(user);
         resp.sendRedirect("/user");
