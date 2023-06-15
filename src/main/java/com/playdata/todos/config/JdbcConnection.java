@@ -3,7 +3,7 @@ package com.playdata.todos.config;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 public class JdbcConnection {
-    private final String url = "jdbc:mysql://localhost:3306/movie" +
+    private final String url = "jdbc:mysql://localhost:3306/todos" +
             "?serverTimezone=Asia/Seoul&characterEncoding=UTF-8";
     private final String username = "root";
     private final String password = "1q2w3e4r!!";
